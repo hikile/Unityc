@@ -1,16 +1,19 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameTool;
 using UnityEngine;
 
-public class Block : MonoBehaviour
+public class Block : BasePooling
 {
     // Start is called before the first frame update
-    private void OnCollisionEnter2D(Collision2D other)
+    void Start()
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("Collided with Brid");
-        }
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
