@@ -5,11 +5,15 @@ namespace GameTool
         None,
         SplMusic,
         Lobby,
-        Battle,
+        Game,
     }
     public enum eSoundName
     {
         None,
-        ButtonClick,
+        Metal_Sound,
+        Stone_Sound,
+        Wood_Sound,
+        Jump_Sound,
+        Dead_Sound,
     }
 }

@@ -5,7 +5,10 @@ using UnityEngine;
 public class GameData : SingletonMonoBehaviour<GameData>
 {
     public GameDataSave Data;
+    public BlockData blockData;
+    public Bullet_Data bulletData;
 
+    public int score = 0;
     //[Header("RESOURCE")] 
 
     //[Header("SCENE FLOW")]
@@ -125,11 +128,22 @@ public class GameData : SingletonMonoBehaviour<GameData>
             SaveData(eData.Vibration, Vibration);
         }
     }
+
+    public int hightestScore
+    {
+        get => Data.hightestscore;
+        set
+        {
+            Data.hightestscore = value;
+            SaveData(eData.hightestscore,hightestScore);
+        }
+    }
 }
 
 [Serializable]
 public class GameDataSave
 {
+    public int hightestscore;
     [Header("CURRRENCY")] public int Diamond = 0;
     public int Gold = 0;
     

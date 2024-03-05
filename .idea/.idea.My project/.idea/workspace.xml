@@ -12,8 +12,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/GameTool/Editor/AudioManagerEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameTool/Scripts/Data/GameData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/NewBehaviourScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/Bullet_Data/Bullet_Data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/UI/GameMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/Wall.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -104,7 +106,21 @@
       <workItem from="1705420399071" duration="2868000" />
       <workItem from="1705494645279" duration="4134000" />
       <workItem from="1705511613390" duration="346000" />
-      <workItem from="1705590376990" duration="1890000" />
+      <workItem from="1705590376990" duration="2090000" />
+      <workItem from="1708427633202" duration="16000" />
+      <workItem from="1708427855694" duration="7034000" />
+      <workItem from="1708435329873" duration="239000" />
+      <workItem from="1709035775779" duration="6553000" />
+      <workItem from="1709120398650" duration="3585000" />
+      <workItem from="1709377069940" duration="193000" />
+      <workItem from="1709379422161" duration="104000" />
+      <workItem from="1709390482668" duration="41000" />
+      <workItem from="1709390610357" duration="632000" />
+      <workItem from="1709393319143" duration="862000" />
+      <workItem from="1709397725097" duration="19000" />
+      <workItem from="1709536780774" duration="3247000" />
+      <workItem from="1709540773811" duration="19000" />
+      <workItem from="1709637125077" duration="9434000" />
     </task>
     <servers />
   </component>

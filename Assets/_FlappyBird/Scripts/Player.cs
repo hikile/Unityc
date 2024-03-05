@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using GameTool;
 using UnityEngine;
 
@@ -8,14 +5,17 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
 
-    private float jumpForce = 20f;
+    private float jumpForce = 10f;
     public float cooldown;
-    public float timesShoot = 0.5f;
+    public float timesShoot = 0.4f;
+    public float boundTop = 4.33f;
+    public float boundBottom = -4.33f;
 
     public GameObject prefabs;
     // Start is called before the first frame update
     void Start()
     {
+        AudioManager.Instance.PlayMusic(eMusicName.Game);
         rb = GetComponent<Rigidbody2D>();
         //rh.AddForce(new Vector2(0,1000));// bay lên từ từ vẫn chịu tác dụng của lục hấp dẫn
        // rh.velocity = new Vector2(0, 16); // giả vật lí 
@@ -42,27 +42,39 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space))
         {
+            AudioManager.Instance.Shot(eSoundName.Jump_Sound);
             rb.velocity = new Vector2(0, jumpForce);
+            
+        }
+        var transform1 = transform;
+        if (transform.position.y >= boundTop)
+        {
+            transform1.position = new Vector2(transform1.position.x, boundTop);
+        }
+
+        if (transform.position.y <= boundBottom)
+        {
+            transform1.position = new Vector2(transform.position.x, boundBottom);
         }
         
         cooldown -= Time.deltaTime;
         if (cooldown <= 0)
         {
-            PoolingManager.Instance.GetObject(NamePrefabPool.Bullet,position:transform.position).Disable(1);
+            PoolingManager.Instance.GetObject(NamePrefabPool.Bullet,position:transform.position).Disable(1.5f);
             cooldown = timesShoot;
         }
+       
 
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Block"))
         {
-            Debug.Log("Collided with Square");
-
+            
         }
-        
     }
+    
 }

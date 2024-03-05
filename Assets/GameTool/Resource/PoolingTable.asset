@@ -17,11 +17,11 @@ MonoBehaviour:
     ItemPooling:
       listPooling:
       - {fileID: 419093066155708704, guid: 962e1e00a96e16845a947549324a6083, type: 3}
-  - key: Block
-    ItemPooling:
-      listPooling:
-      - {fileID: 8327311693528631294, guid: 243097c1708d9eb4b8785c2582b3335e, type: 3}
   - key: Wall
     ItemPooling:
       listPooling:
       - {fileID: 5466112665678248974, guid: 71534bcec066f4041aa13e00e2f647f3, type: 3}
+  - key: Block
+    ItemPooling:
+      listPooling:
+      - {fileID: 8327311693528631294, guid: 243097c1708d9eb4b8785c2582b3335e, type: 3}

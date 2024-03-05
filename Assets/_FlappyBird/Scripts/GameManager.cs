@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using GameTool;
 using UnityEngine;
 
@@ -16,14 +14,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cooldown -= Time.deltaTime;
         if (cooldown <= 0)
         {
+            PoolingManager.Instance.GetObject(NamePrefabPool.Wall,position: new Vector3(6f,0f,0f)).Disable(10);
             cooldown = timeShoot;
-            PoolingManager.Instance.GetObject(NamePrefabPool.Wall, null, new Vector3(5f, 0f, 0f)).Disable(10f);
         }
-        else
-        {
-            cooldown -= Time.deltaTime;
-        }
+
     }
+
+    
 }

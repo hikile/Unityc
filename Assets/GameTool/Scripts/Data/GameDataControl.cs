@@ -4,6 +4,7 @@ namespace GameTool
     {
         public static void SaveAllData()
         {
+            GameData.Instance.SaveData(eData.hightestscore, GameData.Instance.Data.hightestscore);
             GameData.Instance.SaveData(eData.Diamond, GameData.Instance.Data.Diamond);
             GameData.Instance.SaveData(eData.Gold, GameData.Instance.Data.Gold);
             GameData.Instance.SaveData(eData.MuteAll, GameData.Instance.Data.MuteAll);
@@ -15,6 +16,7 @@ namespace GameTool
 
         public static void LoadAllData()
         {
+            GameData.Instance.LoadData(eData.hightestscore, ref GameData.Instance.Data.hightestscore);
             GameData.Instance.LoadData(eData.Diamond, ref GameData.Instance.Data.Diamond);
             GameData.Instance.LoadData(eData.Gold, ref GameData.Instance.Data.Gold);
             GameData.Instance.LoadData(eData.MuteAll, ref GameData.Instance.Data.MuteAll);
