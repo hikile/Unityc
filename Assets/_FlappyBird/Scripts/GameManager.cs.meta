@@ -3,7 +3,10 @@ guid: db348d04cb96b3e4f944c1d965593864
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playBird: {fileID: 9212009785666405866, guid: b75e375c1731e3248a653d33003e3875, type: 3}
+  - skinBird: {fileID: 8879724155328053148, guid: 3faf5ab96110cf646b5484339bbbc9af, type: 3}
+  - Sprite: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

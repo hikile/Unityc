@@ -7,6 +7,7 @@ namespace GameTool
             GameData.Instance.SaveData(eData.hightestscore, GameData.Instance.Data.hightestscore);
             GameData.Instance.SaveData(eData.Diamond, GameData.Instance.Data.Diamond);
             GameData.Instance.SaveData(eData.Gold, GameData.Instance.Data.Gold);
+            GameData.Instance.SaveData(eData.id, GameData.Instance.Data.id);
             GameData.Instance.SaveData(eData.MuteAll, GameData.Instance.Data.MuteAll);
             GameData.Instance.SaveData(eData.PushAlarm, GameData.Instance.Data.PushAlarm);
             GameData.Instance.SaveData(eData.SoundFX, GameData.Instance.Data.SoundFX);
@@ -19,6 +20,7 @@ namespace GameTool
             GameData.Instance.LoadData(eData.hightestscore, ref GameData.Instance.Data.hightestscore);
             GameData.Instance.LoadData(eData.Diamond, ref GameData.Instance.Data.Diamond);
             GameData.Instance.LoadData(eData.Gold, ref GameData.Instance.Data.Gold);
+            GameData.Instance.LoadData(eData.id, ref GameData.Instance.Data.id);
             GameData.Instance.LoadData(eData.MuteAll, ref GameData.Instance.Data.MuteAll);
             GameData.Instance.LoadData(eData.PushAlarm, ref GameData.Instance.Data.PushAlarm);
             GameData.Instance.LoadData(eData.SoundFX, ref GameData.Instance.Data.SoundFX);

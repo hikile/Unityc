@@ -11,37 +11,23 @@ public class Player : MonoBehaviour
     public float boundTop = 4.33f;
     public float boundBottom = -4.33f;
 
-    public GameObject prefabs;
-    // Start is called before the first frame update
+    public SpriteRenderer sr;
+    
+
+    private Animator anim; 
     void Start()
     {
         AudioManager.Instance.PlayMusic(eMusicName.Game);
         rb = GetComponent<Rigidbody2D>();
-        //rh.AddForce(new Vector2(0,1000));// bay lên từ từ vẫn chịu tác dụng của lục hấp dẫn
-       // rh.velocity = new Vector2(0, 16); // giả vật lí 
-       // gravity scale // lực hấp dẫn
-       
-       // điều kiện để xảy ra va chạm:
-       //1: cả 2 phải có collider
-       //2: ít nhất 1 thằng phải có rigidbody
-       
-       // hình ảnh:- Hiện lên (GUI) +> Image
-       //           -Không hiện lên canias +> SpriteREnder
-       /*
-        * Sorting layer:
-        * Order in layer:
-        * cái nào co sorting layer cao hơn thì đè lên cái thấp hơn
-        * nếu 2 cái cùng sorting layer cái nào có order in layer cap hơn thì đè lên cái kia
-        * còn bằng nhau thì roamdom
-        */
        cooldown = timesShoot;
+       anim = GetComponent<Animator>();
+       anim.runtimeAnimatorController = GameData.Instance.listAnimators[GameData.Instance.ID]; // gán animator của bird thành animator trong gameData
     }
-
-    // Update is called once per frame
-    // pooling manager
+    
     
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space))
         {
             AudioManager.Instance.Shot(eSoundName.Jump_Sound);
@@ -76,5 +62,21 @@ public class Player : MonoBehaviour
             
         }
     }
-    
 }
+//rh.AddForce(new Vector2(0,1000));// bay lên từ từ vẫn chịu tác dụng của lục hấp dẫn
+// rh.velocity = new Vector2(0, 16); // giả vật lí 
+// gravity scale // lực hấp dẫn
+       
+// điều kiện để xảy ra va chạm:
+//1: cả 2 phải có collider
+//2: ít nhất 1 thằng phải có rigidbody
+       
+// hình ảnh:- Hiện lên (GUI) +> Image
+//           -Không hiện lên canias +> SpriteREnder
+/*
+ * Sorting layer:
+ * Order in layer:
+ * cái nào co sorting layer cao hơn thì đè lên cái thấp hơn
+ * nếu 2 cái cùng sorting layer cái nào có order in layer cap hơn thì đè lên cái kia
+ * còn bằng nhau thì roamdom
+ */

@@ -40,7 +40,7 @@ public class Bullet : BasePooling
         if (other.gameObject.CompareTag("Block"))
         {
             var block = other.gameObject.GetComponent<Block>();
-            block.takeDamage(0.75f);
+            block.takeDamage(damage);
             Debug.Log(damage);
             //Debug.Log(block.curHp);*/
             Disable(0);

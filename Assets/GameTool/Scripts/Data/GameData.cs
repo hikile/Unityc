@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using GameTool;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class GameData : SingletonMonoBehaviour<GameData>
     public GameDataSave Data;
     public BlockData blockData;
     public Bullet_Data bulletData;
+    public List<RuntimeAnimatorController> listAnimators;
 
     public int score = 0;
     //[Header("RESOURCE")] 
@@ -138,6 +140,16 @@ public class GameData : SingletonMonoBehaviour<GameData>
             SaveData(eData.hightestscore,hightestScore);
         }
     }
+
+    public int ID
+    {
+        get => Data.id;
+        set
+        {
+            Data.id = value;
+            SaveData(eData.id,ID);
+        }
+    }
 }
 
 [Serializable]
@@ -146,6 +158,7 @@ public class GameDataSave
     public int hightestscore;
     [Header("CURRRENCY")] public int Diamond = 0;
     public int Gold = 0;
+    public int id; // tạo 1 bien id để biến bird trong scence "Game" thành animator của scence "game choice"
     
     public bool MuteAll;
     public bool PushAlarm = true;

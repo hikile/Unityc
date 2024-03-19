@@ -13,10 +13,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/GameTool/Editor/AudioManagerEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameTool/Scripts/Data/GameData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/Bird/Bird.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/Bird/buttonSkin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/Bullet_Data/Bullet_Data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/Lobby/Lobby.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/UI/GameMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_FlappyBird/Scripts/Wall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -120,7 +124,23 @@
       <workItem from="1709397725097" duration="19000" />
       <workItem from="1709536780774" duration="3247000" />
       <workItem from="1709540773811" duration="19000" />
-      <workItem from="1709637125077" duration="9434000" />
+      <workItem from="1709637125077" duration="9752000" />
+      <workItem from="1709648328509" duration="36000" />
+      <workItem from="1710240906972" duration="970000" />
+      <workItem from="1710244138302" duration="4516000" />
+      <workItem from="1710255875358" duration="723000" />
+      <workItem from="1710256675184" duration="1834000" />
+      <workItem from="1710344353815" duration="4329000" />
+      <workItem from="1710412204387" duration="2448000" />
+      <workItem from="1710425137790" duration="7000" />
+      <workItem from="1710515839833" duration="166000" />
+      <workItem from="1710517043838" duration="1760000" />
+      <workItem from="1710606204886" duration="5204000" />
+      <workItem from="1710614781816" duration="499000" />
+      <workItem from="1710665984607" duration="2129000" />
+      <workItem from="1710690906865" duration="1334000" />
+      <workItem from="1710772310402" duration="1990000" />
+      <workItem from="1710844413855" duration="4752000" />
     </task>
     <servers />
   </component>

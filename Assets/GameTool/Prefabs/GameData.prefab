@@ -44,11 +44,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
+    hightestscore: 0
     Diamond: 0
     Gold: 0
+    id: 0
     MuteAll: 0
     PushAlarm: 1
     SoundFX: 1
     MusicFX: 1
     Vibration: 1
   blockData: {fileID: 11400000, guid: e5b613ac7f83c7444a23db41e34ea183, type: 2}
+  bulletData: {fileID: 11400000, guid: 9bb6d9b86a50b5a439b4d4c501a78c5b, type: 2}
+  listAnimators:
+  - {fileID: 9100000, guid: 0da93f23e9b55bf4c898b4472ef8713a, type: 2}
+  - {fileID: 9100000, guid: b0fcde6969b330740a2a82f16849bd49, type: 2}
+  - {fileID: 9100000, guid: f6a02d505397044408462d2e27922128, type: 2}
+  - {fileID: 9100000, guid: cc6f4e1f14deabe4598df609b1a2dad6, type: 2}
+  score: 0

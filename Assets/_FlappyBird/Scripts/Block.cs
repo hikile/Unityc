@@ -37,7 +37,7 @@ public class Block : BasePooling
         {
             sr.sprite = GameData.Instance.blockData.listblockSprite[(int)blockTyper].SpriteInfos.listBlockSprite[1];
         }
-        else if (curHp / maxHP <= 1f / 3)
+        else if (curHp / maxHP <= 1f / 3 && curHp/maxHP >=0f)
         {
             sr.sprite = GameData.Instance.blockData.listblockSprite[(int)blockTyper].SpriteInfos.listBlockSprite[0];
         }

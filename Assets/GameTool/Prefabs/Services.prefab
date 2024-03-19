@@ -367,6 +367,26 @@ PrefabInstance:
       propertyPath: bulletData
       value: 
       objectReference: {fileID: 11400000, guid: 9bb6d9b86a50b5a439b4d4c501a78c5b, type: 2}
+    - target: {fileID: 8990584597072763120, guid: 07e5390d739f3464b960273f017b0913, type: 3}
+      propertyPath: skinBird.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990584597072763120, guid: 07e5390d739f3464b960273f017b0913, type: 3}
+      propertyPath: skinBird.Array.data[0]
+      value: 
+      objectReference: {fileID: 9100000, guid: 0da93f23e9b55bf4c898b4472ef8713a, type: 2}
+    - target: {fileID: 8990584597072763120, guid: 07e5390d739f3464b960273f017b0913, type: 3}
+      propertyPath: skinBird.Array.data[1]
+      value: 
+      objectReference: {fileID: 9100000, guid: b0fcde6969b330740a2a82f16849bd49, type: 2}
+    - target: {fileID: 8990584597072763120, guid: 07e5390d739f3464b960273f017b0913, type: 3}
+      propertyPath: skinBird.Array.data[2]
+      value: 
+      objectReference: {fileID: 9100000, guid: f6a02d505397044408462d2e27922128, type: 2}
+    - target: {fileID: 8990584597072763120, guid: 07e5390d739f3464b960273f017b0913, type: 3}
+      propertyPath: skinBird.Array.data[3]
+      value: 
+      objectReference: {fileID: 9100000, guid: cc6f4e1f14deabe4598df609b1a2dad6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07e5390d739f3464b960273f017b0913, type: 3}
 --- !u!4 &6439778636698142589 stripped

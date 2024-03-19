@@ -10,6 +10,7 @@ public class Wall : BasePooling
     private float speed = 5f;
     private float[] posY = new float[4];
     private float[] height = new float[4];
+    private BlockTyper blockTyper;
     private void OnEnable()
     {
         if (Camera.main != null) size = Camera.main.orthographicSize;
@@ -27,12 +28,23 @@ public class Wall : BasePooling
         posY[1] = height[1] / 2;
         posY[2] = -height[2] / 2;
         posY[3] = -size + height[3] / 2;
-
+        int score = GameData.Instance.score;
         for (int i = 0; i < 4; i++)
         {
-             BlockTyper blockTyper =(BlockTyper) Random.Range(0, 3);
+            if (score < 20)
+            {
+                 blockTyper = BlockTyper.Wood;
+            }
+            else if (score >= 20 && score < 40)
+            {
+                 blockTyper = BlockTyper.Stone;
+            }
+            else
+            {
+                blockTyper = (BlockTyper)Random.Range(0, 3);
+            }
 
-             var transform1 = transform;
+            var transform1 = transform;
              var position = transform1.position;
             var block = (Block)PoolingManager.Instance.GetObject(NamePrefabPool.Block, transform1, new Vector3(position.x, posY[i], position.z));
 
