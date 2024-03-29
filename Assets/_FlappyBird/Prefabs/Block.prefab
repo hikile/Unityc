@@ -126,3 +126,4 @@ MonoBehaviour:
   index: 0
   blockTyper: 0
   sound: 3
+  curHp: 0

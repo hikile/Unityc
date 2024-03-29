@@ -38,6 +38,7 @@ public class Lobby : MonoBehaviour
         }
 
         bird.runtimeAnimatorController = listAnimator[id]; // gán animator của bird thành animator số 0 trong list animator
+        Debug.Log("ok");
     }
 
     void backButton()
@@ -48,11 +49,13 @@ public class Lobby : MonoBehaviour
             id = 3;
         }
         bird.runtimeAnimatorController = listAnimator[id];
+        Debug.Log("ok");
     }
     public void playGame()
     {
         GameData.Instance.ID = id; //gán id trong GameData thành id của loppy
         LoadSceneManager.Instance.LoadScene("Game");
+        Debug.Log("ok");
     }
     
 }

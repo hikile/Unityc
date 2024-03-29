@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Block"))
         {
-            
+            Time.timeScale = 0f;
         }
     }
 }

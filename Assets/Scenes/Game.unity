@@ -915,13 +915,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c151d4469d587543897764856a7f394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 2137821808}
   cooldown: 0
   timesShoot: 0.4
   boundTop: 4.33
   boundBottom: -4.33
   sr: {fileID: 2137821806}
-  x: {fileID: 2137821802}
 --- !u!212 &2137821806 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 8879724155328053145, guid: 3faf5ab96110cf646b5484339bbbc9af, type: 3}

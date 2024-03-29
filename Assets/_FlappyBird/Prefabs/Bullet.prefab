@@ -103,7 +103,6 @@ MonoBehaviour:
   rb: {fileID: 1561034381}
   sr: {fileID: 7784348370420773672}
   damage: 0
-  x: {fileID: 8327311693528631294, guid: 243097c1708d9eb4b8785c2582b3335e, type: 3}
 --- !u!50 &1561034381
 Rigidbody2D:
   serializedVersion: 4
