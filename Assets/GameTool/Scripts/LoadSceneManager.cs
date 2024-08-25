@@ -9,8 +9,8 @@ namespace GameTool
     public class LoadSceneManager : SingletonMonoBehaviour<LoadSceneManager>
     {
         public const string nameSceneSpl = "SPL";
-        public const string nameSceneHome = "HomeScene";
-        public const string nameSceneGame = "GameScene";
+        public const string nameSceneHome = "Game_choice";
+        public const string nameSceneGame = "Game";
 
         protected override void Awake()
         {

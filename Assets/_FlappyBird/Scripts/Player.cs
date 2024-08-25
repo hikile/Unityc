@@ -10,9 +10,9 @@ public class Player : MonoBehaviour
     public float timesShoot = 0.4f;
     public float boundTop = 4.33f;
     public float boundBottom = -4.33f;
+    public bool isLive = true;
 
     public SpriteRenderer sr;
-    
 
     private Animator anim; 
     void Start()
@@ -27,39 +27,40 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-        
-        if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space))
+        if (isLive)
         {
-            AudioManager.Instance.Shot(eSoundName.Jump_Sound);
-            rb.velocity = new Vector2(0, jumpForce);
+            if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space))
+            {
+                AudioManager.Instance.Shot(eSoundName.Jump_Sound);
+                rb.velocity = new Vector2(0, jumpForce);
             
-        }
-        var transform1 = transform;
-        if (transform.position.y >= boundTop)
-        {
-            transform1.position = new Vector2(transform1.position.x, boundTop);
-        }
+            }
+            var transform1 = transform;
+            if (transform.position.y >= boundTop)
+            {
+                transform1.position = new Vector2(transform1.position.x, boundTop);
+            }
 
-        if (transform.position.y <= boundBottom)
-        {
-            transform1.position = new Vector2(transform.position.x, boundBottom);
-        }
+            if (transform.position.y <= boundBottom)
+            {
+                transform1.position = new Vector2(transform.position.x, boundBottom);
+            }
         
-        cooldown -= Time.deltaTime;
-        if (cooldown <= 0)
-        {
-            PoolingManager.Instance.GetObject(NamePrefabPool.Bullet,position:transform.position).Disable(1.5f);
-            cooldown = timesShoot;
+            cooldown -= Time.deltaTime;
+            if (cooldown <= 0)
+            {
+                PoolingManager.Instance.GetObject(NamePrefabPool.Bullet,position:transform.position).Disable(1.5f);
+                cooldown = timesShoot;
+            }   
         }
-       
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Block"))
         {
-            Time.timeScale = 0f;
+            isLive = false;
+            GameMenu.Instance.LoadUILoss();
         }
     }
 }
